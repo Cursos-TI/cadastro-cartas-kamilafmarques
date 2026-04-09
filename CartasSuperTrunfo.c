@@ -24,23 +24,7 @@ int main() {
   
   printf ("Carta 1\n");
   printf ("Digite o Estado - Letra de A a H reprentando um dos oito estados: \n");
-  scanf ("%c", &Estado);
-  printf ("Digite o Código da Carta - Letra do estado seguida de um número de 01 a 04: \n");
-  scanf ("%s", &Carta);
-  printf ("Digite o nome da Cidade:\n");
-  scanf ("%s", &Cidade);
-  printf ("Digite o número de habitantes da cidade: \n");
-  scanf ("%d", &População);
-  printf ("Digite a área da cidade em quilômetros quadrado:\n");
-  scanf ("%f", &Área);
-  printf ("Digite o PIB da cidade: \n");
-  scanf ("%f", &PIB);
-  printf ("Digite a quantidade de pontos turísticos na cidade: \n");
-  scanf ("%d", &Pontos);
-
-  printf ("Carta 2\n");
-  printf ("Digite o Estado - Letra de A a H reprentando um dos oito estados: \n");
-  scanf ("%c", &Estado);
+  scanf ("%s", &Estado);
   printf ("Digite o Código da Carta - Letra do estado seguida de um número de 01 a 04: \n");
   scanf ("%s", &Carta);
   printf ("Digite o nome da Cidade:\n");
@@ -65,6 +49,25 @@ int main() {
   printf ("PIB: %.2f\n", PIB);
   printf ("Número de Pontos Turísticos: %d\n", Pontos);
 
+// Área para entrada de dados
+
+  printf ("Carta 2\n");
+  printf ("Digite o Estado - Letra de A a H reprentando um dos oito estados: \n");
+  scanf ("%s", &Estado);
+  printf ("Digite o Código da Carta - Letra do estado seguida de um número de 01 a 04: \n");
+  scanf ("%s", &Carta);
+  printf ("Digite o nome da Cidade:\n");
+  scanf ("%s", &Cidade);
+  printf ("Digite o número de habitantes da cidade: \n");
+  scanf ("%d", &População);
+  printf ("Digite a área da cidade em quilômetros quadrado:\n");
+  scanf ("%f", &Área);
+  printf ("Digite o PIB da cidade: \n");
+  scanf ("%f", &PIB);
+  printf ("Digite a quantidade de pontos turísticos na cidade: \n");
+  scanf ("%d", &Pontos);
+
+    // Área para exibição dos dados da cidade
 
   printf ("Carta 2\n");
   printf ("Estado: %c\n", Estado);
