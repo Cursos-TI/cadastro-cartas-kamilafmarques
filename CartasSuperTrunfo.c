@@ -16,8 +16,8 @@ int main() {
     float Área1;
     float PIB1;
     int Pontos1;
-    float Densidade1;
-    float PIBpercapita1;
+    float Densidade1 = (float)População1 / Área1;
+    float PIBpercapita1 = (float) PIB1 / População1;
 
 
     char Estado2;
@@ -27,8 +27,8 @@ int main() {
     float Área2;
     float PIB2;
     int Pontos2;
-    float Densidade2;
-    float PIBpercapita2;
+    float Densidade2 = (float)População2 / Área2;
+    float PIBpercapita2 = (float) PIB2 / População2;
 
  
   
@@ -40,10 +40,10 @@ int main() {
   printf ("Vamos começar o jogo Super Trunfo!\n");
   printf ("Você deve digitar os dados das suas cartas nas lacunas abaixo.\n");
   
-  printf ("Carta 1\n");
-  printf ("Digite o Estado - Letra de A a H reprentando um dos oito estados: \n");
+  printf ("\nCarta 1\n");
+  printf ("Digite o Estado: \n");
   scanf ("%c", &Estado1);
-  printf ("Digite o Código da Carta - Letra do estado seguida de um número de 01 a 04: \n");
+  printf ("Digite o Código da Carta: \n");
   scanf ("%s", Carta1);
   printf ("Digite o nome da Cidade:\n");
   scanf ("%s", Cidade1);
@@ -56,10 +56,10 @@ int main() {
   printf ("Digite a quantidade de pontos turísticos na cidade: \n");
   scanf ("%d", &Pontos1);
 
-  printf ("Carta 2\n");
-  printf ("Digite o Estado - Letra de A a H reprentando um dos oito estados: \n");
+  printf ("\n Carta 2\n");
+  printf ("Digite o Estado: \n");
   scanf ("%c", &Estado2);
-  printf ("Digite o Código da Carta - Letra do estado seguida de um número de 01 a 04: \n");
+  printf ("Digite o Código da Carta: \n");
   scanf ("%s", Carta2);
   printf ("Digite o nome da Cidade:\n");
   scanf ("%s", Cidade2);
@@ -75,7 +75,7 @@ int main() {
 
   // Área para exibição dos dados da cidade
   
-  printf ("Carta 1\n");
+  printf ("\n Carta 1\n");
 
   printf ("Estado: %c\n", Estado1);
   printf ("Código: %s\n", Carta1);
@@ -84,12 +84,12 @@ int main() {
   printf ("Área: %.2f\n", Área1);
   printf ("PIB: %.2f\n", PIB1);
   printf ("Número de Pontos Turísticos: %d\n", Pontos1);
-  float Densidade1 = População1 / Área1;
+  float Densidade1 = (float)População1 / Área1;
   printf ("Densidade Populacional: %.2f\n", Densidade1);
   float PIBpercapita1 = (float) PIB1 / População1;
   printf ("PIB per Capita: %.2f\n", PIBpercapita1);
   
-  printf ("Carta 2\n");
+  printf ("\n Carta 2\n");
 
   printf ("Estado: %c\n", Estado2);
   printf ("Código: %s\n", Carta2);
@@ -98,7 +98,7 @@ int main() {
   printf ("Área: %.2f\n", Área2);
   printf ("PIB: %.2f\n", PIB2);
   printf ("Número de Pontos Turísticos: %d\n", Pontos2);
-  float Densidade2 = População2 / Área2;
+  float Densidade2 = (float)População2 / Área2;
   printf ("Densidade Populacional: %.2f\n", Densidade2);
   float PIBpercapita2 = (float) PIB2 / População2;
   printf ("PIB per Capita: %.2f\n", PIBpercapita2);
